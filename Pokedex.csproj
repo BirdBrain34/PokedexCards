@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98E11815-DBB2-4F41-97F1-322CF448A865}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{122416d6-6b49-4ee2-a1e8-b825f31c79fe}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pokedex</RootNamespace>
+    <AssemblyName>Pokedex</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v13.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidPackageFormat>aab</AndroidPackageFormat>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_main.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\ic_launcher_background.xml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0.5" />
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.0.0.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\abra.jpeg" />
+    <AndroidResource Include="Resources\drawable\aerodactyl.jpeg" />
+    <AndroidResource Include="Resources\drawable\alakazam.jpeg" />
+    <AndroidResource Include="Resources\drawable\arbok.jpeg" />
+    <AndroidResource Include="Resources\drawable\arcanine.jpeg" />
+    <AndroidResource Include="Resources\drawable\articuno.jpeg" />
+    <AndroidResource Include="Resources\drawable\beedrill.jpeg" />
+    <AndroidResource Include="Resources\drawable\bellsprout.jpeg" />
+    <AndroidResource Include="Resources\drawable\blastoise.jpeg" />
+    <AndroidResource Include="Resources\drawable\bulbasaur.jpeg" />
+    <AndroidResource Include="Resources\drawable\butterfree.jpeg" />
+    <AndroidResource Include="Resources\drawable\caterpie.jpeg" />
+    <AndroidResource Include="Resources\drawable\chansey.jpeg" />
+    <AndroidResource Include="Resources\drawable\charizard.jpeg" />
+    <AndroidResource Include="Resources\drawable\charmander.jpeg" />
+    <AndroidResource Include="Resources\drawable\charmeleon.jpeg" />
+    <AndroidResource Include="Resources\drawable\clefable.jpeg" />
+    <AndroidResource Include="Resources\drawable\clefairy.jpeg" />
+    <AndroidResource Include="Resources\drawable\cloyster.jpeg" />
+    <AndroidResource Include="Resources\drawable\cubone.jpeg" />
+    <AndroidResource Include="Resources\drawable\dewgong.jpeg" />
+    <AndroidResource Include="Resources\drawable\diglett.jpeg" />
+    <AndroidResource Include="Resources\drawable\ditto.jpeg" />
+    <AndroidResource Include="Resources\drawable\dodrio.jpeg" />
+    <AndroidResource Include="Resources\drawable\doduo.jpeg" />
+    <AndroidResource Include="Resources\drawable\dragonair.jpeg" />
+    <AndroidResource Include="Resources\drawable\dragonite.jpeg" />
+    <AndroidResource Include="Resources\drawable\dratini.jpeg" />
+    <AndroidResource Include="Resources\drawable\drowzee.jpeg" />
+    <AndroidResource Include="Resources\drawable\dugtrio.jpeg" />
+    <AndroidResource Include="Resources\drawable\eevee.jpeg" />
+    <AndroidResource Include="Resources\drawable\ekans.jpeg" />
+    <AndroidResource Include="Resources\drawable\electrabuzz.jpeg" />
+    <AndroidResource Include="Resources\drawable\electrode.jpeg" />
+    <AndroidResource Include="Resources\drawable\exeggcute.jpeg" />
+    <AndroidResource Include="Resources\drawable\exeggutor.jpeg" />
+    <AndroidResource Include="Resources\drawable\farfetchd.jpeg" />
+    <AndroidResource Include="Resources\drawable\fearow.jpeg" />
+    <AndroidResource Include="Resources\drawable\flareon.jpeg" />
+    <AndroidResource Include="Resources\drawable\gastly.jpeg" />
+    <AndroidResource Include="Resources\drawable\gengar.jpeg" />
+    <AndroidResource Include="Resources\drawable\geodude.jpeg" />
+    <AndroidResource Include="Resources\drawable\gloom.jpeg" />
+    <AndroidResource Include="Resources\drawable\golbat.jpeg" />
+    <AndroidResource Include="Resources\drawable\goldeen.jpeg" />
+    <AndroidResource Include="Resources\drawable\golduck.jpeg" />
+    <AndroidResource Include="Resources\drawable\golem.jpeg" />
+    <AndroidResource Include="Resources\drawable\graveler.jpeg" />
+    <AndroidResource Include="Resources\drawable\grimer.jpeg" />
+    <AndroidResource Include="Resources\drawable\growlithe.jpeg" />
+    <AndroidResource Include="Resources\drawable\gyarados.jpeg" />
+    <AndroidResource Include="Resources\drawable\haunter.jpeg" />
+    <AndroidResource Include="Resources\drawable\hitmonchan.jpeg" />
+    <AndroidResource Include="Resources\drawable\hitmonlee.jpeg" />
+    <AndroidResource Include="Resources\drawable\horsea.jpeg" />
+    <AndroidResource Include="Resources\drawable\hypno.jpeg" />
+    <AndroidResource Include="Resources\drawable\ivysaur.jpeg" />
+    <AndroidResource Include="Resources\drawable\jigglypuff.jpeg" />
+    <AndroidResource Include="Resources\drawable\jolteon.jpeg" />
+    <AndroidResource Include="Resources\drawable\jynx.jpeg" />
+    <AndroidResource Include="Resources\drawable\kabuto.jpeg" />
+    <AndroidResource Include="Resources\drawable\kabutops.jpeg" />
+    <AndroidResource Include="Resources\drawable\kadabra.jpeg" />
+    <AndroidResource Include="Resources\drawable\kakuna.jpeg" />
+    <AndroidResource Include="Resources\drawable\kangaskhan.jpeg" />
+    <AndroidResource Include="Resources\drawable\kingler.jpeg" />
+    <AndroidResource Include="Resources\drawable\koffing.jpeg" />
+    <AndroidResource Include="Resources\drawable\krabby.jpeg" />
+    <AndroidResource Include="Resources\drawable\lapras.jpeg" />
+    <AndroidResource Include="Resources\drawable\lickitung.jpeg" />
+    <AndroidResource Include="Resources\drawable\machamp.jpeg" />
+    <AndroidResource Include="Resources\drawable\machoke.jpeg" />
+    <AndroidResource Include="Resources\drawable\machop.jpeg" />
+    <AndroidResource Include="Resources\drawable\magikarp.jpeg" />
+    <AndroidResource Include="Resources\drawable\magmar.jpeg" />
+    <AndroidResource Include="Resources\drawable\magnemite.jpeg" />
+    <AndroidResource Include="Resources\drawable\magneton.jpeg" />
+    <AndroidResource Include="Resources\drawable\mankey.jpeg" />
+    <AndroidResource Include="Resources\drawable\marowak.jpeg" />
+    <AndroidResource Include="Resources\drawable\meowth.jpeg" />
+    <AndroidResource Include="Resources\drawable\metapod.jpeg" />
+    <AndroidResource Include="Resources\drawable\mew.jpeg" />
+    <AndroidResource Include="Resources\drawable\mewtwo.jpeg" />
+    <AndroidResource Include="Resources\drawable\moltres.jpeg" />
+    <AndroidResource Include="Resources\drawable\mrmime.jpeg" />
+    <AndroidResource Include="Resources\drawable\muk.jpeg" />
+    <AndroidResource Include="Resources\drawable\nidoking.jpeg" />
+    <AndroidResource Include="Resources\drawable\nidoqueen.jpeg" />
+    <AndroidResource Include="Resources\drawable\nidoranf.jpeg" />
+    <AndroidResource Include="Resources\drawable\nidoranm.jpeg" />
+    <AndroidResource Include="Resources\drawable\nidorina.jpeg" />
+    <AndroidResource Include="Resources\drawable\nidorino.jpeg" />
+    <AndroidResource Include="Resources\drawable\ninetales.jpeg" />
+    <AndroidResource Include="Resources\drawable\oddish.jpeg" />
+    <AndroidResource Include="Resources\drawable\old_amber.jpeg" />
+    <AndroidResource Include="Resources\drawable\omanyte.jpeg" />
+    <AndroidResource Include="Resources\drawable\omastar.jpeg" />
+    <AndroidResource Include="Resources\drawable\onix.jpeg" />
+    <AndroidResource Include="Resources\drawable\paras.jpeg" />
+    <AndroidResource Include="Resources\drawable\parasect.jpeg" />
+    <AndroidResource Include="Resources\drawable\persian.jpeg" />
+    <AndroidResource Include="Resources\drawable\pidgeot.jpeg" />
+    <AndroidResource Include="Resources\drawable\pidgeotto.jpeg" />
+    <AndroidResource Include="Resources\drawable\pidgey.jpeg" />
+    <AndroidResource Include="Resources\drawable\pikachu.jpeg" />
+    <AndroidResource Include="Resources\drawable\pinsir.jpeg" />
+    <AndroidResource Include="Resources\drawable\pokeball.png" />
+    <AndroidResource Include="Resources\drawable\pokeball.png.jpg" />
+    <AndroidResource Include="Resources\drawable\poliwag.jpeg" />
+    <AndroidResource Include="Resources\drawable\poliwhirl.jpeg" />
+    <AndroidResource Include="Resources\drawable\poliwrath.jpeg" />
+    <AndroidResource Include="Resources\drawable\ponyta.jpeg" />
+    <AndroidResource Include="Resources\drawable\porygon.jpeg" />
+    <AndroidResource Include="Resources\drawable\primeape.jpeg" />
+    <AndroidResource Include="Resources\drawable\psyduck.jpeg" />
+    <AndroidResource Include="Resources\drawable\raichu.jpeg" />
+    <AndroidResource Include="Resources\drawable\rapidash.jpeg" />
+    <AndroidResource Include="Resources\drawable\raticate.jpeg" />
+    <AndroidResource Include="Resources\drawable\rattata.jpeg" />
+    <AndroidResource Include="Resources\drawable\rhydon.jpeg" />
+    <AndroidResource Include="Resources\drawable\rhyhorn.jpeg" />
+    <AndroidResource Include="Resources\drawable\sandshrew.jpeg" />
+    <AndroidResource Include="Resources\drawable\sandslash.jpeg" />
+    <AndroidResource Include="Resources\drawable\scyther.jpeg" />
+    <AndroidResource Include="Resources\drawable\seadra.jpeg" />
+    <AndroidResource Include="Resources\drawable\seaking.jpeg" />
+    <AndroidResource Include="Resources\drawable\seel.jpeg" />
+    <AndroidResource Include="Resources\drawable\shellder.jpeg" />
+    <AndroidResource Include="Resources\drawable\slowbro.jpeg" />
+    <AndroidResource Include="Resources\drawable\slowpoke.jpeg" />
+    <AndroidResource Include="Resources\drawable\snorlax.jpeg" />
+    <AndroidResource Include="Resources\drawable\spearow.jpeg" />
+    <AndroidResource Include="Resources\drawable\squirtle.jpeg" />
+    <AndroidResource Include="Resources\drawable\staryu.jpeg" />
+    <AndroidResource Include="Resources\drawable\tangela.jpeg" />
+    <AndroidResource Include="Resources\drawable\tauros.jpeg" />
+    <AndroidResource Include="Resources\drawable\tentacool.jpeg" />
+    <AndroidResource Include="Resources\drawable\tentacruel.jpeg" />
+    <AndroidResource Include="Resources\drawable\vaporeon.jpeg" />
+    <AndroidResource Include="Resources\drawable\venomoth.jpeg" />
+    <AndroidResource Include="Resources\drawable\venonat.jpeg" />
+    <AndroidResource Include="Resources\drawable\venusaur.jpeg" />
+    <AndroidResource Include="Resources\drawable\victreebel.jpeg" />
+    <AndroidResource Include="Resources\drawable\vileplume.jpeg" />
+    <AndroidResource Include="Resources\drawable\voltorb.jpeg" />
+    <AndroidResource Include="Resources\drawable\vulpix.jpeg" />
+    <AndroidResource Include="Resources\drawable\wartortle.jpeg" />
+    <AndroidResource Include="Resources\drawable\weedle.jpeg" />
+    <AndroidResource Include="Resources\drawable\weepinbell.jpeg" />
+    <AndroidResource Include="Resources\drawable\weezing.jpeg" />
+    <AndroidResource Include="Resources\drawable\wigglytuff.jpeg" />
+    <AndroidResource Include="Resources\drawable\zapdos.jpeg" />
+    <AndroidResource Include="Resources\drawable\zubat.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+    Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+  -->
+</Project>
